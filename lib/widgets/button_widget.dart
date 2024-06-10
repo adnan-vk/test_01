@@ -30,26 +30,12 @@ class ButtonWidget {
 
   textbutton(
       {onpressed, text, pushpage, required context, replacementpage, weight}) {
-    // final pro = Provider.of<AuthenticationProvider>(context, listen: false);
     return GestureDetector(
       onTap: () {
-        // pro.clearControllers();
         NavigatorHelper().push(context: context, page: pushpage);
       },
       child: TextWidget()
           .text(data: text, color: Colors.black, size: 8.0, weight: weight),
-    );
-  }
-
-  leadingIcon(context) {
-    return IconButton(
-      onPressed: () {
-        NavigatorHelper().pop(context: context);
-      },
-      icon: const Icon(
-        EneftyIcons.arrow_left_3_outline,
-        color: Colors.black,
-      ),
     );
   }
 }

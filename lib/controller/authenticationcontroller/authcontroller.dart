@@ -47,36 +47,6 @@ class AuthController extends ChangeNotifier {
     notifyListeners();
   }
 
-  // Future<void> googleSignIn(context) async {
-  //   try {
-  //     User? guser = await authService.googleSignIn();
-  //     Navigator.pushAndRemoveUntil(
-  //       context,
-  //       MaterialPageRoute(
-  //         builder: (context) => BottomBar(),
-  //       ),
-  //       (route) => false,
-  //     );
-  //     final user = UserModel(
-  //         email: guser!.email ?? "",
-  //         phoneNumber: guser.phoneNumber ?? "",
-  //         firstname: guser.displayName ?? "",
-  //         uId: guser.uid,
-  //         lastname: "",
-  //         image: guser.photoURL);
-  //     await authService.addUser(user);
-  //     getUser();
-  //     notifyListeners();
-  //   } catch (e) {
-  //     log('Google not signed in ');
-  //   }
-  // }
-
-  // Future<void> googleSignout() async {
-  //   await authService.googleSignOut();
-  //   notifyListeners();
-  // }
-
   clearControllers() {
     firstnamecontroller.clear();
     lastnamecontroller.clear();
@@ -88,24 +58,10 @@ class AuthController extends ChangeNotifier {
     notifyListeners();
   }
 
-  // Future<void> getOtp(phoneNumber) async {
-  //   await authService.getOtp(phoneNumber);
-  //   notifyListeners();
-  // }
-
-  // Future<void> verifyOtp(otp, context) async {
-  //   await authService.verifyOtp(otp, context);
-  //   notifyListeners();
-  // }
-
   showOtp() {
     showOtpField = true;
     notifyListeners();
   }
-
-  // countrySelection(value) {
-  //   selectCountry = value;
-  // }
 
   updateUser(userid, UserModel data) async {
     await authService.updateUser(userid, data);

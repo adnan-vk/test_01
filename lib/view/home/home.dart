@@ -14,7 +14,6 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
-    // final pro = Provider.of<AuthController>(context, listen: false);
     return Scaffold(
       appBar: AppBar(
         automaticallyImplyLeading: false,
@@ -57,7 +56,6 @@ class HomeScreen extends StatelessWidget {
 
   logout(context) {
     final pro = Provider.of<AuthController>(context, listen: false);
-    // final prov = Provider.of<BottomProvider>(context, listen: false);
     return showDialog(
       context: context,
       builder: (BuildContext context) {

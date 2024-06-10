@@ -85,20 +85,16 @@ class HomeWidgets {
                               weight: FontWeight.bold,
                             ),
                             IconButton(
-                                onPressed: () {
-                                  Navigator.push(
-                                    context,
-                                    MaterialPageRoute(
-                                      builder: (context) =>
-                                          EditPage(data: item),
-                                    ),
-                                  );
-                                },
-                                icon: const Icon(EneftyIcons.card_edit_outline))
-                            // const Icon(
-                            //   EneftyIcons.card_edit_outline,
-                            //   color: Colors.red,
-                            // ),
+                              onPressed: () {
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                    builder: (context) => EditPage(data: item),
+                                  ),
+                                );
+                              },
+                              icon: const Icon(EneftyIcons.card_edit_outline),
+                            )
                           ],
                         )
                       ],

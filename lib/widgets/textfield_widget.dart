@@ -71,29 +71,4 @@ class textFormField {
       },
     );
   }
-
-  // searchtextfield({String? label, preicon, required context}) {
-  //   final pro = Provider.of<ItemProvider>(context, listen: false);
-  //   return TextFormField(
-  //     style: TextStyle(fontSize: 14.0),
-  //     decoration: InputDecoration(
-  //       prefixIcon: Icon(
-  //         preicon,
-  //         color: Colors.black,
-  //       ),
-  //       hintText: label,
-  //       hintStyle: TextStyle(color: Colors.black),
-  //       contentPadding: EdgeInsets.symmetric(vertical: 10.0, horizontal: 15.0),
-  //       border: OutlineInputBorder(
-  //         borderSide: BorderSide.none,
-  //         borderRadius: BorderRadius.circular(50),
-  //       ),
-  //       filled: true,
-  //       fillColor: Color.fromARGB(255, 234, 233, 233),
-  //     ),
-  //     onChanged: (value) {
-  //       pro.search(value);
-  //     },
-  //   );
-  // }
 }
